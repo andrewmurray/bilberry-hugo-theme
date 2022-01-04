@@ -80,10 +80,6 @@ article {
             border-bottom: 3px double $meta-border-color;
             margin-bottom: 4.5%;
 
-            a {
-                font-style: normal;
-            }
-
             span {
                 &:before {
                     content: " / ";
@@ -99,10 +95,6 @@ article {
                     content: ", ";
                 }
             }
-        }
-
-        a {
-            font-style: italic;
         }
 
         a.more {

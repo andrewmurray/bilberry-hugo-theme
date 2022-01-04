@@ -15,11 +15,13 @@
     .title,
     .subtitle {
         font-family: $headline-font;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
     }
 
     a {
-        color: inherit;
-        text-decoration: none;
         transition: all 0.2s ease-in-out;
 
         &:hover {
