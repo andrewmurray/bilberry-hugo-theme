@@ -94,13 +94,13 @@
     <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link rel="stylesheet" href="{{ "theme.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "theme.css" | relURL }}">
 
     {{ partial "twitter-card.html" . }}
 
     {{ if isset .Site.Params "css_modules" }}
         {{ range .Site.Params.css_modules }}
-            <link rel="stylesheet" href="{{ . | absURL }}">
+            <link rel="stylesheet" href="{{ . | relURL }}">
         {{ end }}
     {{ end }}
 </head>
@@ -124,11 +124,11 @@
     {{ end }}
 
 
-    <script type="text/javascript" src="{{ "theme.js" | absURL }}"></script>
+    <script type="text/javascript" src="{{ "theme.js" | relURL }}"></script>
 
     {{ if isset .Site.Params "js_modules" }}
     {{ range .Site.Params.js_modules }}
-    <script src="{{ . | absURL }}" type="application/javascript"></script>
+    <script src="{{ . | relURL }}" type="application/javascript"></script>
     {{ end }}
     {{ end }}
 
